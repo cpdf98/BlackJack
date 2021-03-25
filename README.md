@@ -1,2 +1,2 @@
 # BlackJack
-A simple blackjack program
+A simple text-based blackjack program written in java
