@@ -4,9 +4,9 @@ class play{
 	static String[][] game(String[][] startingData){
 		boolean dealerTurn = true;//If true, it will display the dealer's hidden card. If false, it will hide it
 		Scanner input = new Scanner(System.in);
-		ArrayList<String> preShuffleDeck = arrayConvert.getDeck(startingData, 0);
+		ArrayList<String> unshuffledDeck = arrayConvert.getDeck(startingData, 0);
 		ArrayList<String> deadDeck = arrayConvert.getDeck(startingData, 1);
-		ArrayList<String> deck = shuffleClass.shuffleDeck(preShuffleDeck);
+		ArrayList<String> deck = shuffleClass.shuffleDeck(unshuffledDeck);
 		ArrayList<String> playerHand = new ArrayList<String>();
 		ArrayList<String> dealerHand = new ArrayList<String>();
 		playerHand = draw(playerHand, deck, deadDeck);
